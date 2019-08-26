@@ -4,7 +4,6 @@ import './App.scss';
 
 const App: React.FC = () => {
     const getData =  (data: any) => {
-        // do not forget to bind getData in constructor
         console.log(data);
     };
 
