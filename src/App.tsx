@@ -4,7 +4,6 @@ import './App.scss';
 
 const App: React.FC = () => {
     const getData =  (data: any) => {
-        // do not forget to bind getData in constructor
         console.log(data);
     };
 
@@ -18,8 +17,6 @@ const App: React.FC = () => {
           <SegmentedControl segmentLabel="Payment Type" values={['PayPal', 'Credit Card', 'Net Term']}/>
           <SegmentedControl segmentLabel="gender" values={['Male', 'Female']}/>
           <SegmentedControl segmentLabel="number selection" values={['1','2','3','4']} defaultTo="3"/>
-          <SegmentedControl segmentLabel="true false selection" values={['true', 'false']}/>
-          <SegmentedControl segmentLabel="true false selection" values={['true', 'false']}/>
           <SegmentedControl segmentLabel="true false selection" values={['true', 'false']}/>
         </div>
       <div className="App-main-samples">

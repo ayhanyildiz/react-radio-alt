@@ -1,12 +1,19 @@
 import React, { Component, ChangeEvent } from 'react';
 import './SegmentedContorl.scss';
 
+// array with min 2 length https://github.com/Microsoft/TypeScript/issues/23528
+type ArrayTwoOrMore<T> = {
+    0: T
+    1: T
+} & Array<T>
+
+
 interface State {
     checkedOption: string;
 }
 
 interface Props {
-    values: string[];
+    values: ArrayTwoOrMore<string>;
     segmentLabel: string;
     defaultTo?: string;
     sendData?(data: any): void;
