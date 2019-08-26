@@ -1,0 +1,30 @@
+$base-color: #6B73A7;
+$base-size: 10px;
+
+$color-lg20: lighten($base-color, 20%);
+$color-lg40: lighten($base-color, 40%);
+$color-drk15: darken($base-color, 15%);
+$color-drk20: darken($base-color, 20%);
+$color-drk30: darken($base-color, 30%);
+$color-drk40: darken($base-color, 40%);
+
+//default values
+$text-color: $base-color;
+$text-bold: 600;
+
+$border-radius: $base-size/2.5;
+$border-color: $color-lg20;
+
+$container-spacing: $base-size $base-size*2;
+
+$element-base-color: white;
+$element-active-color: white;
+$element-active-bg-color: $color-drk20;
+$element-active-bg-shadow-color: $color-drk30;
+$element-hover-color: $color-drk40;
+
+
+
+
+
+

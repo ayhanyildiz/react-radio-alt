@@ -1,0 +1,78 @@
+@import "styles/app.variables";
+
+.SegmentedControl {
+  display: inline-flex;
+  flex-direction: column;
+  flex:1;
+  padding: $container-spacing;
+  color: $text-color;
+  font-size: $base-size*1.6;
+
+  @at-root div {
+    display: flex;
+    flex-wrap: wrap;
+
+    @media all and (max-width: 900px) {
+      flex-direction: column;
+    }
+  }
+
+  @media all and (max-width: 900px) {
+    &:not(:last-of-type) {
+      border-bottom: 1px solid $border-color;
+    }
+  }
+
+  @media all and (min-width: 900px) {
+    &:not(:last-of-type) {
+      border-right: 1px solid $border-color;
+    }
+  }
+
+  > span {
+    display: flex;
+  }
+
+  &-header {
+    padding: $base-size/2 0;
+    font-weight: $text-bold;
+    text-transform: capitalize;
+  }
+
+  &-controlBox {
+    label {
+      background-color: $element-base-color;
+      padding: $container-spacing;
+      cursor: pointer;
+      white-space: nowrap;
+
+      &:first-of-type {
+        border-radius: $border-radius 0 0 $border-radius;
+      }
+
+      &:last-of-type {
+        border-radius:  0 $border-radius $border-radius 0;
+      }
+
+      transition: all .5s ease-in-out;
+
+
+      &.checked {
+        color: $element-active-color;
+        background-color: $element-active-bg-color;
+        box-shadow: inset 0 0 10px $element-active-bg-shadow-color;
+        transition: all .5s ease-in-out;
+      }
+
+      &:hover:not(.checked) {
+        color: $element-hover-color;
+      }
+
+      input {
+        opacity: 0;
+        position: fixed;
+        cursor: pointer;
+      }
+    }
+  }
+}

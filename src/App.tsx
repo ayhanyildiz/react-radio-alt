@@ -1,26 +1,42 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import SegmentedControl from './SegmentedControl';
+import './App.scss';
 
 const App: React.FC = () => {
+    const getData =  (data: any) => {
+        // do not forget to bind getData in constructor
+        console.log(data);
+    };
+
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+        <h1>Segmented Control Reusable Component</h1>
       </header>
+      <main className="App-main">
+        <div className="App-main-samples">
+          <SegmentedControl segmentLabel="Payment Type" values={['PayPal', 'Credit Card', 'Net Term']}/>
+          <SegmentedControl segmentLabel="gender" values={['Male', 'Female']}/>
+          <SegmentedControl segmentLabel="number selection" values={['1','2','3','4']} defaultTo="3"/>
+          <SegmentedControl segmentLabel="true false selection" values={['true', 'false']}/>
+          <SegmentedControl segmentLabel="true false selection" values={['true', 'false']}/>
+          <SegmentedControl segmentLabel="true false selection" values={['true', 'false']}/>
+        </div>
+      <div className="App-main-samples">
+          <SegmentedControl segmentLabel="Payment Type" values={['PayPal', 'Credit Card', 'Net Term']}/>
+          <SegmentedControl segmentLabel="gender" values={['Male', 'Female']}/>
+          <SegmentedControl segmentLabel="number selection" values={['1','2','3','4']} defaultTo="3"/>
+      </div>
+      <div className="App-main-samples">
+          <SegmentedControl segmentLabel="Payment Type" values={['PayPal', 'Credit Card', 'Net Term']}/>
+          <SegmentedControl segmentLabel="gender" values={['Male', 'Female']}/>
+      </div>
+      <div className="App-main-samples">
+          <SegmentedControl sendData={getData} segmentLabel="Payment Type" values={['PayPal', 'Credit Card', 'Net Term']}/>
+      </div>
+      </main>
     </div>
   );
-}
+};
 
 export default App;
