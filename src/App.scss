@@ -15,10 +15,10 @@
 
   &-main {
     flex: 1;
-
-    &-samples {
-      margin: 20px 0;
-      background-color: $color-lg40;
-    }
   }
+}
+
+.sg-group {
+  margin: 20px 0;
+  background-color: $color-lg40;
 }
