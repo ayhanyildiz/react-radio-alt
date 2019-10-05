@@ -1,8 +1,63 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Screenshot
+
+![image](https://user-images.githubusercontent.com/1895266/66258584-f25e4e00-e774-11e9-8d67-8494568a3579.png)
 
 ## Available Scripts
 
 In the project directory, you can run:
+```html
+<div className="sg-group">
+    <SegmentedControl
+        segmentLabel="Payment Type"
+        values={['PayPal', 'Credit Card', 'Net Term']}
+    />
+    <SegmentedControl
+        segmentLabel="gender"
+        values={['Male', 'Female']}
+    />
+    <SegmentedControl
+        segmentLabel="number selection"
+        values={['1', '2', '3', '4']}
+        defaultTo="3"
+    />
+    <SegmentedControl
+        segmentLabel="true false selection"
+        values={['true', 'false']}
+    />
+</div>
+<div className="sg-group">
+    <SegmentedControl
+        segmentLabel="Payment Type"
+        values={['PayPal', 'Credit Card', 'Net Term']}
+    />
+    <SegmentedControl
+        segmentLabel="gender"
+        values={['Male', 'Female']}
+    />
+    <SegmentedControl
+        segmentLabel="number selection"
+        values={['1', '2', '3', '4']}
+        defaultTo="3"
+    />
+</div>
+<div className="sg-group">
+    <SegmentedControl
+        segmentLabel="Payment Type"
+        values={['PayPal', 'Credit Card', 'Net Term']}
+    />
+    <SegmentedControl
+        segmentLabel="gender"
+        values={['Male', 'Female']}
+    />
+</div>
+<div className="sg-group">
+    <SegmentedControl
+        sendData={getData}
+        segmentLabel="Payment Type"
+        values={['PayPal', 'Credit Card', 'Net Term']}
+    />
+</div>
+ ```
 
 ### `npm start`
 
