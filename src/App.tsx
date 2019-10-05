@@ -10,7 +10,7 @@ const App: React.FC = () => {
   return (
     <div className="App">
       <header className="App-header">
-        <h1>Segmented Control Reusable Component</h1>
+        <h1>Pretty Radio Box Group</h1>
       </header>
       <main className="App-main">
         <div className="App-main-samples">
