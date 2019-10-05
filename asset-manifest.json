@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/react-radio-alt/static/css/main.191bcb4a.chunk.css",
+    "main.js": "/react-radio-alt/static/js/main.1141f810.chunk.js",
+    "main.js.map": "/react-radio-alt/static/js/main.1141f810.chunk.js.map",
+    "runtime~main.js": "/react-radio-alt/static/js/runtime~main.11abcba8.js",
+    "runtime~main.js.map": "/react-radio-alt/static/js/runtime~main.11abcba8.js.map",
+    "static/js/2.937205c5.chunk.js": "/react-radio-alt/static/js/2.937205c5.chunk.js",
+    "static/js/2.937205c5.chunk.js.map": "/react-radio-alt/static/js/2.937205c5.chunk.js.map",
+    "index.html": "/react-radio-alt/index.html",
+    "precache-manifest.a0c5edcc7ac6bc3e8311beda78473557.js": "/react-radio-alt/precache-manifest.a0c5edcc7ac6bc3e8311beda78473557.js",
+    "service-worker.js": "/react-radio-alt/service-worker.js",
+    "static/css/main.191bcb4a.chunk.css.map": "/react-radio-alt/static/css/main.191bcb4a.chunk.css.map"
+  }
+}
